@@ -1,4 +1,4 @@
-## <p align="center">Atividade 02</p>
+## <p align="center">Atividade 01</p>
 
 ### Descrição das questões
 1. Entrar com um número e informar se ele é divisível por 10, por 5, por 2 ou se não é divisível por nenhum destes

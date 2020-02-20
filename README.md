@@ -6,3 +6,10 @@
 ### Aula 03 contém
 1 - listas
 
+### Aula 04 contém
+1 - Funcões(conteúdo)
+
+### Aula 05 contém
+1 - Arrays(conteúdo)
+
+

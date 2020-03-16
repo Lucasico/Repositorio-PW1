@@ -9,6 +9,7 @@ $listaCoisas["pessoas"] = array('João', 'maria','seu zé');
 echo"<pre>";
     var_dump($listaCoisas);
 echo "</pre>";
+
 echo"<hr>";
 //uma outra forma de arrays multidimensionais
   $listaClientes = [];

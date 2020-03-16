@@ -37,6 +37,7 @@ echo"<hr>";
  * sequencia de indices. Aqui é explicito a forma/nome dos indices
  * do array
  */
+
   $lista_clientes = array(
     "cliente01" => "lucas",
     "cliente02" => "marcio",

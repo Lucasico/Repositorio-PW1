@@ -1,14 +1,14 @@
 <?php
 /**
  * a linguagem PHP é fracamente tipada
- * e permitite redeclaração de variavel
+ * e permite a redeclaração de variável
  * a qualquer momento.
  */
-$nome = "Lucas";
+$nome = "Santos";
 function mostrarNome(){
   //so foi alterada dentro do escopo
   //da função
-  $nome = "Santos";
+  $nome = "Lucas";
   echo $nome;
 }
 mostrarNome();

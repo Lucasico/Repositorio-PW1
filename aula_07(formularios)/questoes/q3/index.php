@@ -46,7 +46,7 @@
 <?php
   if(isset($_FILES['uploadImage'])){
     if(!$_FILES['uploadImage']['error']){
-      print_r($_FILES['uploadImage']);
+      
       $retorno = false;
        //O nome original do arquivo na máquina do cliente
        $name = $_FILES['uploadImage']['name'];

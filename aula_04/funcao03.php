@@ -4,12 +4,14 @@
  * para funções em PHP, muito similar a C
  */
 $nome = "Lucas";
+
 function  escreverNome($n){
-  $n = "Bezerra";
+  $n = " Bezerra";
   print $n;
   //para retornar vazio
-  //return;
+  return null;
 }
+
 print $nome;
 escreverNome($nome);
 

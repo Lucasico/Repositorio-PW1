@@ -24,7 +24,7 @@
     </div>
   </div>
     <div class="row">
-        <form method="post" action='php/mostrar/mostrar.php'>
+        <form method="post" action='php/mostrar/requerimento.php'>
             <div class="input-field col s8">
            
               <input type="text" name= "requerente" id="autocomplete-input" class="autocomplete">
@@ -239,8 +239,5 @@
 </body>
 </html>
 <?php
-  if(isset($_GET['error'])){
-      require_once('php/mostrar/mostrar.php');
-      var_dump($retorno);
-  }
+
 ?>

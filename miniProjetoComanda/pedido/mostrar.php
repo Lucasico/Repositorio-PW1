@@ -27,6 +27,8 @@
                   echo"</li>";              
                 }
             }
+            
+            //se os campos da variavel $camposVazios forem nulos
             if(empty($camposVazios)){
              foreach($dados as $d){
                echo"<pre>";

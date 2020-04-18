@@ -15,6 +15,7 @@ function limparVetor($varPost) {
     }
     return $arrayLimpo;
 }
+
 // Verificar se o formulário foi enviado
 function formEnviado($postArray) {
     global $dados;
@@ -42,6 +43,8 @@ function gerarMensagensErro($postArray) {
     $nome = $postArray['nome'];
     $entrega = $postArray['entrega'];
     $fone = $postArray['telefone'];
+
+    //preechimento dos erros
     $retornoValidaPratoPrincipal = pratoPrincipal($pratoPrincipal);
     $retornoValidaAcompanhamento = validaAcompanhamento($acompanhamento);
     $retornoValidaConfirmar = validaConfirmar($confirmaTermos);
@@ -58,6 +61,7 @@ function gerarMensagensErro($postArray) {
         'ERROR_04' => $retornoEntrega,
         'ERROR_05' => $retornoFone
     );
+    
     $mensagem_erro['NotErroList'] = array(
         'GERAR_COMANDA' => "Gerar comanda de pedidos",
     );
@@ -67,6 +71,7 @@ function gerarMensagensErro($postArray) {
 
 function verificaCamposVazios(){
     global $arrayRetorno;
+
     function pratoPrincipal($validaPratoPrincipal){
         if( empty($validaPratoPrincipal) ){
             $arrayRetorno['ERROR_00'] = "Prato Principal obrigatorio!";

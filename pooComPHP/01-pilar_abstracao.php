@@ -3,13 +3,11 @@
   class Funcionario{
 
     //atributos
-     public $nome = null;
-     public $telefone = null;
-     public $numFilhos = 0;
-
+     private $nome = null;
+     private $telefone = null;
+     private $numFilhos = 0;
 
     //get e set
-
 
     //setando valores aos atributos
     function setNome($nome){
@@ -46,7 +44,10 @@
 
     function modificarNumFilhos($numFilhos){
       //atributo numFilhos = recebeu $numFilhos
-      $this->numFilhos = $numFilhos;
+      $this->setNumFilhos($numFilhos);
+      $nome = $this->getNome();
+      $numFilhos = $this->getNumFilhos();
+      return 'O funcionario ' . $nome . ' tem: ' . $numFilhos . ' filhos';
 
     }
 
@@ -55,6 +56,7 @@
   $funcionario = new Funcionario();
   $funcionario->setNome('Lucas');
   $funcionario->setNumFilhos(2);
-  echo $funcionario->resumirCadFunc();
+  echo $funcionario->modificarNumFilhos(4);
+  
   echo "<hr />";
 ?>

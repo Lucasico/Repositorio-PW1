@@ -42,6 +42,7 @@ function verificaError($dadosForm){
   $declaro = $dadosForm['declaroConhecer']= ( isset($_POST['declaroConhecer']) ) ? $_POST['declaroConhecer'] : null;
   $assEstudantil = $dadosForm['assEstudantil'] = ( isset($_POST['assEstudantil']) ) ? $_POST['assEstudantil'] : null;
   $biblioteca = $dadosForm['biblioteca'] = ( isset($_POST['biblioteca']) ) ? $_POST['biblioteca'] : null;
+  
   $retornoRequerente = verificaRequerente($requerente);
   $retornoMatricula = verificaMatricula($matricula);
   $retornoNaturalidade = verificaNaturalidade($naturalidade);

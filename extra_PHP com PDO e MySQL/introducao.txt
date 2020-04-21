@@ -1,0 +1,3 @@
+PHP com PDO, ou PHP com Data Objects
+- é um driver que apartir do PHP 5, já vem instalado
+- o pdo_mysql, já vem estartado no php os outros como pdo_pgsql, pdo_oci, precisam ser iniciados

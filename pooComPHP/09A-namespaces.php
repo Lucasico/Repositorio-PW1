@@ -1,7 +1,8 @@
 <?php
   //namespace é utilizado para evitar conflitos entre classe
   //com mesmo nome por exemplo, uma biblioteca com classes com mesmo nome
-  //este funciona como um diferenciador de nomes
+  //este funciona como um diferenciador de nomes, ou seja, como se fosse 
+  //um outro espaço de mémoria 
 
   //A primeiro momento ocorreria um erro por conta dos nomes
   namespace A;
@@ -43,7 +44,9 @@ interface CadastroInterface
 
 
 //veja que nesta instancia do objeto, sera retornado os elementos
-//referentes a ele
+//referentes a ele "lucas", haja vista que o codigo se encontra dentro 
+//do namespace B
+
 $pessoaB = new Pessoa;
 print_r($pessoaB);
 
